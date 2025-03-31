@@ -173,7 +173,7 @@ P A R A B E N S!\nvocê acertou!\nVocê precisou de {num_tentativas} tentativas!
                                                 if (codigo_3 > tentativa_3):
                                                     print(f"O terceiro digito é maior que {tentativa_3}")
                                                 else:
-                                                    print(f"O terceiro digito é menor que {tentativa_4}")
+                                                    print(f"O terceiro digito é menor que {tentativa_3}")
                                         else:
                                             dica_valida = 0 #retorna no inicio do loop quando a dica é invalida
                                     else:
