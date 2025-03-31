@@ -36,7 +36,8 @@ while repetir == 1:
         if tentativa == codigo:
             print(" --------------------------------------- ")
             print(" ")
-            print(f"P A R A B E N S!\nvocê acertou!\nVocê precisou de {num_tentativas} tentativas!")
+            print(f"""Sua tentativa nesta rodada foi: {tentativa}
+P A R A B E N S!\nvocê acertou!\nVocê precisou de {num_tentativas} tentativas!""")
             print(" ")
             print(" --------------------------------------- ")
             repetir = int(input("Você deseja reiniciar o jogo? (Digite 1 para SIM e 0 para NÃO): "))
@@ -50,6 +51,7 @@ while repetir == 1:
                 print("")
                 print(" --------------------------------------- ")
                 print(" ")
+                print(f"Sua tentativa nesta rodada foi: {tentativa}")
                 print(">>>ATENÇÃO!!!<<<\nO numero deve ser entre >>>1000 e 9999<<<")
                 num_tentativas -= 1
                 tentativas_restantes += 1
@@ -179,11 +181,14 @@ while repetir == 1:
                     print("_")
                     
                 print(" ")
+                print(f"Sua tentativa nesta rodada foi: {tentativa}")
+                print(" ")
                 print(f"Você acertou >{cont_t}< digitos nesta tentativa.")
                 print(" ")
                 cont_t -= cont_t
                 
                 if num_tentativas < 10:
+                    print(f"Sua tentativa nesta rodada foi: {tentativa}")
                     print(f"Você errou!\nVocê ainda tem >>>{tentativas_restantes}<<< tentativas restantes")
                     print(" ")
                     print(" --------------------------------------- ")
