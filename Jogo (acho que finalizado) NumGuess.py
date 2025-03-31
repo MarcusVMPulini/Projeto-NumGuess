@@ -54,8 +54,6 @@ while repetir == 1:
                 num_tentativas -= 1
                 tentativas_restantes += 1
                 
-#Sistema de dicas
-
             else:
 
 #operações matematicas que dividem o codigo em unidades
@@ -73,7 +71,9 @@ while repetir == 1:
                 print(" ")
                 print(" --------------------------------------- ")
                 print(" ")
-            
+
+#sistema de dicas
+                
                 if num_tentativas >= 5:
                     dica_valida = 0
                     while dica_valida == 0:
