@@ -81,8 +81,6 @@ P A R A B E N S!\nvocê acertou!\nVocê precisou de {num_tentativas} tentativas!
                     while dica_valida == 0:
                         slot_dica = random.randint(1, 4)
                         rand_dica = random.randint(1, 2)
-                        print(f"slot = {slot_dica}")
-                        print(f"dicas aleatorias = {rand_dica}")
                         if slot_dica == 1:
                             if codigo_1 != tentativa_1:
                                 dica_valida = 1
@@ -92,10 +90,10 @@ P A R A B E N S!\nvocê acertou!\nVocê precisou de {num_tentativas} tentativas!
                                     else:
                                         print(f"O primeiro digito é >IMPAR<")
                                 else:
-                                    if (codigo_1 > 5):
-                                        print("O primeiro digito é maior que 5")
+                                    if (codigo_1 > tentativa_1):
+                                        print(f"O primeiro digito é maior que {tentativa_1}")
                                     else:
-                                        print("O primeiro digito é menor que 5")
+                                        print(f"O primeiro digito é menor que {tentativa_1}")
                             else:
                                 dica_valida = 0
                         else:
@@ -108,10 +106,10 @@ P A R A B E N S!\nvocê acertou!\nVocê precisou de {num_tentativas} tentativas!
                                         else:
                                             print(f"O segundo digito é >IMPAR<")
                                     else:
-                                        if (codigo_2 > 5):
-                                            print("O segundo digito é maior que 5")
+                                        if (codigo_2 > tentativa_2):
+                                            print(f"O segundo digito é maior que {tentativa_2}")
                                         else:
-                                            print("O segundo digito é menor que 5")
+                                            print(f"O segundo digito é menor que {tentativa_2}")
                                 else:
                                     dica_valida = 0              
                             else:
@@ -124,10 +122,10 @@ P A R A B E N S!\nvocê acertou!\nVocê precisou de {num_tentativas} tentativas!
                                             else:
                                                 print(f"O terceiro digito é >IMPAR<")
                                         else:
-                                            if (codigo_3 > 5):
-                                                print("O terceiro digito é maior que 5")
+                                            if (codigo_3 > tentativa_3):
+                                                print(f"O terceiro digito é maior que {tentativa_3}")
                                             else:
-                                                print("O terceiro digito é menor que 5")
+                                                print(f"O terceiro digito é menor que {tentativa_4}")
                                     else:
                                         dica_valida = 0
                                 else:
@@ -140,10 +138,10 @@ P A R A B E N S!\nvocê acertou!\nVocê precisou de {num_tentativas} tentativas!
                                                 else:
                                                     print(f"O quarto digito é >IMPAR<")
                                             else:
-                                                if (codigo_4 > 5):
-                                                    print("O quarto digito é maior que 5")
+                                                if (codigo_4 > tentativa_4):
+                                                    print(f"O quarto digito é maior que {tentativa_4}")
                                                 else:
-                                                    print("O quarto digito é menor que 5")
+                                                    print(f"O quarto digito é menor que {tentativa_4}")
                                         else:
                                             dica_valida = 0
 
@@ -181,8 +179,6 @@ P A R A B E N S!\nvocê acertou!\nVocê precisou de {num_tentativas} tentativas!
                     print("_")
                     
                 print(" ")
-                print(f"Sua tentativa nesta rodada foi: {tentativa}")
-                print(" ")
                 print(f"Você acertou >{cont_t}< digitos nesta tentativa.")
                 print(" ")
                 cont_t -= cont_t
@@ -195,6 +191,7 @@ P A R A B E N S!\nvocê acertou!\nVocê precisou de {num_tentativas} tentativas!
         
                 else:
                     print(" --------------------------------------- ")
+                    print(f"Sua tentativa nesta rodada foi: {tentativa}")
                     print(f"O numero de tentativas >>>ACABARAM!<<<\nO codigo correto era >>> {codigo} <<<")
                     print(" ")
                     print(" --------------------------------------- ")
