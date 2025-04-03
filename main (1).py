@@ -91,7 +91,7 @@ while repetir == 1:
             cont_t -= cont_t
     
             if num_tentativas >= 5 and num_tentativas < 10:
-                print("Dica: ", end="")
+                print("\nDica: ", end="")
                 dica_valida = 0
     
                 while dica_valida == 0:
